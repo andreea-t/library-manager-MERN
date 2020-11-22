@@ -7,7 +7,7 @@ import Books from './dbBooks.js'
 //App config
 const app = express();
 const port = process.env.PORT || 8000;
-const connection_url = "mongodb+srv://admin:<pw>@cluster0.pdng2.mongodb.net/library?retryWrites=true&w=majority";
+const connection_url = "mongodb+srv://admin:<password>@cluster0.pdng2.mongodb.net/library?retryWrites=true&w=majority";
 
 //Middleware
 app.use(express.json());
