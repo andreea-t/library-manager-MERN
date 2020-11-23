@@ -1,15 +1,16 @@
 import React from 'react'
 import './App.css';
 import Books from './Books.js'
+import AddBook from './AddBook'
 
 function App() {
   return (
     <div className="App">
-            {/* Nav */}
 
-            {/* Book list */}
-                <Books></Books>  
-                {/* GET */}
+            <AddBook></AddBook>
+
+            <Books></Books>  
+
 
             {/* Add book */}
                 {/* Form with POST */}
