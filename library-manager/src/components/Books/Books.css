@@ -1,0 +1,12 @@
+.books__table{
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.books__table thead {
+    font-weight: 600;
+}
+
+.books__table tr{
+    height: 40px;
+}

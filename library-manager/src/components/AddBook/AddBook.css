@@ -1,0 +1,54 @@
+.addBook__form{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.addBook__form-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+
+.addBook__input{
+    min-width: 200px;
+    height: 30px;
+    border: 1px solid #555;
+    outline: none;
+    padding: 0 5px 0 5px;
+}
+
+.addBook__label{
+    
+}
+
+.addBook__btn-group{
+    width: 100%;
+    margin: 5px;
+    text-align: right;
+}
+
+.addBook__btnWrapper{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.addBook__submit{
+    height: 50px;
+    width: 80px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #4DB6AC;
+    color: #fff;
+    transition: .15s linear;
+}
+
+.addBook__submit:hover{
+    background-color: #009688;
+}

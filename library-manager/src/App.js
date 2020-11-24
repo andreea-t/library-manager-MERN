@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css';
-import Books from './Books.js'
-import AddBook from './AddBook'
+import Books from './components/Books/Books.js'
+import AddBook from './components/AddBook/AddBook'
 
 function App() {
   return (

@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Button from '@material-ui/core/Button';
-import LibraryAddIcon from '@material-ui/icons/LibraryAdd';
-import TextField from '@material-ui/core/TextField';
 import './AddBook.css'
-import axios from './axios';
+import axios from './../../services/axios';
 
 function AddBook() {
     const [form, setForm] = useState({title: '', author: ''});
-    // const [title, setTitle] = useState([]);
-    // const [author, setAuthor] = useState([]);
 
     const handleChange = (e) => {
         setForm({
@@ -65,12 +60,26 @@ function AddBook() {
 
     return (
         <div className="addBook">
-            
-            <form onSubmit={handleSubmit}>
-                <input type="text" name="title" onChange={handleChange}></input>
-                <input type="text" name="author" onChange={handleChange}></input>
+            <form class="addBook__form" onSubmit={handleSubmit}>
+                <div class="addBook__form-group">
+                    <div class="addBook__label">
+                        <label for="title">Title</label>
+                    </div>
+                    <input class="addBook__input" type="text" name="title" onChange={handleChange}></input>
+                </div>
 
-                <input type="submit"></input>
+                <div class="addBook__form-group">
+                    <div class="addBook__label">
+                        <label for="author">Author</label>
+                    </div>
+                    <input class="addBook__input" type="text" name="author" onChange={handleChange}></input>
+                </div>
+                
+                <div class="addBook__btn-group">
+                    <div class="addBook__btnWrapper">
+                        <input class="addBook__submit" type="submit"></input>
+                    </div>
+                </div>
             </form>
         </div>
     )
